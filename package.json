@@ -1,0 +1,19 @@
+{
+  "name": "press-list-checker",
+  "private": true,
+  "type": "module",
+  "description": "Stores a press list and checks whether each journalist is still at their outlet.",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "tsx --test bot/lib/press-list.test.ts",
+    "dev": "bdk dev"
+  },
+  "dependencies": {
+    "@cursor/bdk": "^0.2.20",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "typescript": "6.0.3"
+  }
+}
